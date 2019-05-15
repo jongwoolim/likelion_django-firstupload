@@ -1,0 +1,8 @@
+<h1>여기는 글 수 정 하 기 페 이 지 입 니 다.</h1>
+
+
+<form action="{% url 'update' board_target.id %}">
+    제목 : <input type="text" name="title" value="{{ board_target.title}}"><br><br>
+    내용 : <textarea rows = "10" name ="text">{{ board_target.text }}<</textarea><br><br>
+    <input type="submit" value="글쓰기"><br><br>
+</form>

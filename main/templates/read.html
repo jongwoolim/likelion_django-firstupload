@@ -1,0 +1,10 @@
+<h1>글 자 세 하 게 읽 는 중</h1>
+<hr>
+<p>제 목 : {{ read.title }}</p>
+<p>내용 : {{ read.text }}</p>
+<p>작성일자 : {{ read.created_at }}</p>
+
+<a href="{% url 'edit' read.id %}">수정하기</a>
+<a href="{% url 'delete' read.id %}">삭제하기</a>
+
+
